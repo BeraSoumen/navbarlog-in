@@ -1,0 +1,271 @@
+
+*{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family:'Times New Roman', Times, serif;
+}
+
+section{
+position: relative;
+width: 100%;
+height: 100vh;
+display:flex
+}
+section .firstbox{
+position:relative;
+width: 50%;
+height: 100%;
+}
+section.firstbox:before{
+               content: '';
+               position: absolute;
+               top:0;
+               left:0;
+               width:100%;
+               height: 100%;
+               
+}
+section .firstbox img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+  
+  
+}
+section .content{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ width:50%;
+ height: 100%;
+}
+section.content.from{
+               width:50%;
+}
+section .content .from h2{
+            color:blue;
+            font-weight: 700;   
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            /*border-bottom: 4px solid greenyellow;*/
+            display:inline-block;
+            text-align: center;
+}
+section .content .from .inputuser{
+               margin-bottom: 20px;
+}
+section .content .from .inputuser span{
+               font-size: 16px;
+               margin-bottom: 5px;
+               display: inline-block;
+               color:black;
+               font-weight: 400;
+}
+section .content .from .inputpass span{
+               font-size: 16px;
+               margin-bottom: 5px;
+               display: inline-block;
+               color:black;
+               font-weight: 400;
+}
+section .content .from .inputpass input{
+           width:100%; 
+           padding: 10px 20px;
+           outline: none;
+           font-weight: 400;
+           border: 1px solid black;
+           font-size: 16px;
+           background: transparent;
+           border-radius: 30px;
+}
+section .content .from .inputuser input{
+               width:100%; 
+               padding: 10px 20px;
+               outline: none;
+               font-weight: 400;
+               border: 1px solid black;
+               font-size: 16px;
+               background: transparent;
+               border-radius: 30px;   
+    }
+section .content .from .inputremember input{
+               width:100%;  
+               padding: 10px 20px;
+               outline: none;
+               font-weight: 400;
+               border: 1px solid red;
+               font-size: 16px;
+               background: transparent;
+               border-radius: 30px;  
+              
+    }
+    section .content .from .createaccount input{
+       width:100%;    
+      padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid black;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 30px;
+    }
+    section .content .from .submit input{
+               width:100%;    
+               padding: 10px 20px;
+               outline: none;
+               font-weight: 400;
+               border: 1px solid black;
+               font-size: 16px;
+               background: transparent;
+               border-radius: 30px;
+    }
+    section .content .from .submit input[type="button"]
+    {
+                  background: skyblue;
+                  color:blue;
+                  outline:none;
+                  border:none;
+                  font-weight: 500;
+                  cursor: pointer;
+                  
+    }
+    section .content .from .submit input[type="button"]:hover{
+                   color:red;
+                   background-color: chartreuse;
+    }
+    section .content .from .inputremember{
+               margin-bottom: 10px;
+               color:red;
+               font-weight: 400;
+               font-size: 14px;
+    }
+    section .content .from .createaccount p  {
+                   color:black;
+    }
+    section .content .from .createaccount p a  {
+               color:rebeccapurple;
+}
+section .content .from h3{
+               color:blue;
+               text-align: center;
+               margin: 80px 0 10px;
+               font-weight: 500;
+}
+section .content .from .social{
+               display:flex;
+               justify-content: center;
+               align-items: center;
+               margin-bottom: 20px;
+               
+}
+section .content .from .social  input {
+               
+               width:100%;    
+               padding: 5px 10px;
+               outline: none;
+               font-weight: 300;
+               border: 1px solid black;
+               font-size: 16px;
+               background: transparent;
+               border-radius: 20px;
+
+}
+ section .content .from .social  input[type="button"]{
+               
+               background: skyblue;
+               color:blue;
+               outline:none;
+               border:none;
+               font-weight: 500;
+               cursor: pointer;   
+                  
+}
+section .content .from .social  input[type="button"]:hover{
+               color:red;
+               background-color: chartreuse;
+}
+
+section .content .from .sociala  input {
+               
+               width:100%;    
+               padding: 5px 10px;
+               outline: none;
+               font-weight: 300;
+               border: 1px solid black;
+               font-size: 16px;
+               background: transparent;
+               border-radius: 20px;
+
+}
+ section .content .from .sociala  input[type="button"]{
+               
+               background: skyblue;
+               color:blue;
+               outline:none;
+               border:none;
+               font-weight: 500;
+               cursor: pointer;   
+                  
+}
+section .content .from .sociala  input[type="button"]:hover{
+               color:red;
+               background-color: chartreuse;
+}
+
+@media (max-width:768px){
+               section.firstbox{
+                              position: absolute;
+                              top:0;
+                              left:0;
+                              width:100%;
+                              height:100%;
+               }
+               section.content{
+                              display:flex;
+                              justify-content: center;
+                              align-items: center;
+                              width:100%;
+                              height:100%;
+                              z-index: 1;
+               }
+               section .content .from{
+                              width:100%;
+                              padding:40px;
+                              margin: 50px;
+                              background-color: rgb(255,255,255/0.9);
+               }
+               section .content .from h3{
+                              color:blue;
+                              text-align: center;
+                              margin: 30px 0 10px;
+                              font-weight: 500;
+               }
+
+}
+.from{
+  background-color: aqua;
+  border: 3px solid cornflowerblue;
+  border-radius: 20px;
+  padding: 25px;
+
+  
+}
+body{
+
+  background-image: url("https://wallpaperaccess.com/full/2314950.jpg");
+  background-repeat:no-repeat;
+  
+}
+
+  
+}
+.soumen h3{
+display: flex;
+  text-align: center;
+  
+}
+
